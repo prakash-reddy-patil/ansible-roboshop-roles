@@ -26,8 +26,10 @@
   ansible.builtin.shell: mongosh --host {{ MONGODB_HOST }} </app/db/master-data.js
   when: catalogue_output.stdout | int < 0
 
-
-
+- name: app setup
+  ansible.builtin.import_role:
+    name: common
+    tasks_from: system-setup.yaml
 
 # catalogue is one role, common is another role
 # catalogue should import the tasks in common role

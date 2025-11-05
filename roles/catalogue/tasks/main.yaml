@@ -29,14 +29,6 @@
 
 
 
-
-
-
-
-
-
-
-
 # catalogue is one role, common is another role
 # catalogue should import the tasks in common role
 # ansible.builtin.import_role:

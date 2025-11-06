@@ -1,0 +1,4 @@
+RABBITMQ_USER: roboshop
+MYSQL_ROOT_PASSWORD: roboshop123
+version: 1.0
+

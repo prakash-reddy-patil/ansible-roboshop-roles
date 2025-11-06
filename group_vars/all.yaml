@@ -1,3 +1,5 @@
 MONGODB_HOST: mongodb.divyavutakanti.shop
 REDIS_HOST: redis.divyavutakanti.shop
 CATALOGUE_HOST: catalogue.divyavutakanti.shop
+CART_HOST: cart.divyavutakanti.shop
+MYSQL_HOST: mysql.divyavutakanti.shop

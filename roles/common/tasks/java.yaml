@@ -13,6 +13,6 @@
     chdir: /app    # args: chdir: /app means “Go to the /app folder first, then run the task.”
 
  - name: move jar file
-   ansible.builtin.command: mv target/{{ component }}-*.jar {{ component }}.jar
+   ansible.builtin.command: mmv target/{{ component }}-{{ version }}.jar {{ component }}.jar
    args:
     chdir: /app

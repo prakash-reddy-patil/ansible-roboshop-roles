@@ -2,11 +2,15 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: app-setup-yaml
+  tags:        # Tags in Ansible help you run only specific parts of a playbook instead of running everything.
+  - deployment
 
 - name: app setup
   ansible.builtin.import_role:
     name: common
     tasks_from: nodejs.yaml
+  tags:       
+  - deployment
 
 - name: copy mongo repo
   ansible.builtin.copy:
@@ -30,6 +34,8 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: system-setup.yaml
+  tags:           #Tags in Ansible help you run only specific parts of a playbook instead of running everything.
+  - deployment
 
 # catalogue is one role, common is another role
 # catalogue should import the tasks in common role
